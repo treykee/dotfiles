@@ -1,0 +1,29 @@
+
+[user]
+	name = Trey Keenon
+	email = trey.keenon@fullsteam.com
+
+[credential]
+	helper = osxkeychain
+
+[credential "ssh.dev.azure.com/fullsteamllc"]
+	helper = osxkeychain
+	username = trey.keenon@fullsteam.com
+
+[core]
+	excludesfile = ~/.gitignore_global
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[push]
+	default = simple
+
+[merge]
+	tool = bc3
+
+[difftool]
+	prompt = false

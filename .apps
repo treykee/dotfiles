@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+# Third party app configuration
+#
+# This configuration provides the same configuration for third party applications
+# that the .macos script provides for macOS.
+#
+#
+#
+# @author Trey Keenon, 2018
+
+# Warn that some commands will not be run if the script is not run as root.
+
+###############################################################################
+# iTerm2                                                                      #
+###############################################################################
+
+# Specify the preferences directory
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/OneDrive/dotfiles/iterm2"
+
+# Tell iTerm2 to use the custom preferences in the directory
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
+# Don’t display the annoying prompt when quitting iTerm
+defaults write com.googlecode.iterm2.plist PromptOnQuit -bool false
+
+###############################################################################
+# Visual Studio Code                                                          #
+###############################################################################
+
+# Work in progress
